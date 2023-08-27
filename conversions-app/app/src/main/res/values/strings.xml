@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="app_name">Conversions</string>
+
+    <string name="from">De:</string>
+    <string name="to">Para:</string>
+    <string name="initial_value">0</string>
+    <string name="enter_the_value">Insira o valor</string>
+    <string name="calculate">Calcular</string>
+
+    <string name="length">Comprimento</string>
+    <string name="km">Quilômetro (km)</string>
+    <string name="hm">Hectômetro (hm)</string>
+    <string name="dam">Decâmetro (dam)</string>
+    <string name="m">Metro (m)</string>
+    <string name="dm">Decímetro (dm)</string>
+    <string name="cm">Centímetro (cm)</string>
+    <string name="mm">Milímetro (mm)</string>
+
+    <string name="weight">Peso</string>
+    <string name="kg">Quilograma (kg)</string>
+    <string name="hg">Hectograma (hg)</string>
+    <string name="dag">Decagrama (dag)</string>
+    <string name="g">Grama (g)</string>
+    <string name="dg">Decigrama (dg)</string>
+    <string name="cg">Centrigrama (cg)</string>
+    <string name="mg">Miligrama (mg)</string>
+
+    <string name="temperature">Temperatura</string>
+    <string name="c">Celsius (°C)</string>
+    <string name="f">Fahrenheit  (°F)</string>
+    <string name="k">Kelvin (K)</string>
+
+    <string name="volume">Volume</string>
+    <string name="km_volume">Quilômetro (km³)</string>
+    <string name="hm_volume">Hectômetro (hm³)</string>
+    <string name="dam_volume">Decâmetro (dam³)</string>
+    <string name="m_volume">Metro (m³)</string>
+    <string name="dm_volume">Decímetro (dm³)</string>
+    <string name="cm_volume">Centímetro (cm³)</string>
+    <string name="mm_volume">Milímetro (mm³)</string>
+
+</resources>

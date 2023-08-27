@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_gray"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/from"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/button_conversion_type_1"
+        app:layout_constraintStart_toStartOf="@id/button_conversion_type_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/to"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/button_conversion_type_2"
+        app:layout_constraintStart_toStartOf="@id/button_conversion_type_2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_conversion_type_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/primary_purple"
+        android:padding="16dp"
+        android:text="@string/km"
+        android:textColor="@color/white"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toStartOf="@id/button_conversion_type_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_from" />
+
+    <Button
+        android:id="@+id/button_conversion_type_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary_purple"
+        android:padding="16dp"
+        android:text="@string/cm"
+        android:textColor="@color/white"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_conversion_type_1"
+        app:layout_constraintTop_toBottomOf="@id/text_to" />
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/initial_value"
+        android:textColor="@color/white"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toTopOf="@id/edit_enter_the_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_conversion_type_1" />
+
+    <EditText
+        android:id="@+id/edit_enter_the_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="#FFFFFF"
+        android:hint="@string/enter_the_value"
+        android:inputType="number"
+        android:maxLength="9"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/button_weight"
+        app:layout_constraintEnd_toStartOf="@id/button_calculate"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="2dp"
+        android:backgroundTint="@color/primary_purple"
+        android:padding="16dp"
+        android:text="@string/calculate"
+        android:textColor="@color/white"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/edit_enter_the_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/edit_enter_the_value"
+        app:layout_constraintTop_toTopOf="@id/edit_enter_the_value" />
+
+    <Button
+        android:id="@+id/button_length"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:backgroundTint="@color/primary_purple"
+        android:padding="16dp"
+        android:text="@string/length"
+        android:textColor="@color/white"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@id/button_temperature"
+        app:layout_constraintEnd_toStartOf="@id/button_weight"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary_purple"
+        android:padding="16dp"
+        android:text="@string/weight"
+        android:textColor="@color/white"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/button_length"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_length"
+        app:layout_constraintTop_toTopOf="@id/button_length" />
+
+    <Button
+        android:id="@+id/button_temperature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:backgroundTint="@color/primary_purple"
+        android:padding="16dp"
+        android:text="@string/temperature"
+        android:textColor="@color/white"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_volume"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <Button
+        android:id="@+id/button_volume"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary_purple"
+        android:padding="16dp"
+        android:text="@string/volume"
+        android:textColor="@color/white"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/button_temperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_temperature"
+        app:layout_constraintTop_toTopOf="@id/button_temperature" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

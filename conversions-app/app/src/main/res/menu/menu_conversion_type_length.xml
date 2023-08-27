@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/item_1"
+         android:title="@string/km"/>
+
+    <item android:id="@+id/item_2"
+        android:title="@string/hm"/>
+
+    <item android:id="@+id/item_3"
+        android:title="@string/dam"/>
+
+    <item android:id="@+id/item_4"
+        android:title="@string/m"/>
+
+    <item android:id="@+id/item_5"
+        android:title="@string/dm"/>
+
+    <item android:id="@+id/item_6"
+        android:title="@string/cm"/>
+
+    <item android:id="@+id/item_7"
+        android:title="@string/mm"/>
+
+
+</menu>
